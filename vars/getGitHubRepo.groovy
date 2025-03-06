@@ -4,5 +4,6 @@ def call(def branch, def url) {
         git branch: branch, credentialsId: 'github-token', url: url
             sh 'ls'
             sh 'pwd'
+            echo "Echo from my shared-libray"
     }
 }
